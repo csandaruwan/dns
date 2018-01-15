@@ -1,0 +1,9 @@
+---
+# create a DNS A record
+- dnsimple:
+    domain: my.com
+    record: test
+    type: A
+    value: 127.0.0.1
+  delegate_to: localhost
+  register: record
